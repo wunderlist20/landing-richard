@@ -5,15 +5,13 @@
 }
 .menu-container {
   color: #fff;
-  background-color: #4694ea;
   padding: 20px 0;
   display: flex;
   justify-content: center;
 }
 .menu {
-  width: 900px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .menu .logo {
   display: flex;
@@ -23,17 +21,42 @@
   width: 25%;
   height: auto;
 }
+.menu .download {
+  display: flex;
+  padding: 20px;
+}
+.menu .download a {
+  text-decoration: none;
+}
 .links {
   display: flex;
   justify-content: flex-end;
 }
 .signup {
+  flex: 0 0 auto;
   margin-left: auto;
   padding: 20px;
+}
+.signup a {
+  text-decoration: none;
 }
 .login {
   margin-left: 20px;
   padding: 20px;
+  flex: 0 0 auto;
+}
+.login a {
+  text-decoration: none;
+}
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 .footer {
   display: flex;
@@ -48,33 +71,36 @@
 .header-container {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 .header {
   width: 900px;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  padding-top: 20px;
+  padding-top: 40px;
 }
-.header .video {
-  padding: 20px;
+.video {
+  flex: 0 0 auto;
 }
-.header .video img {
+.video img {
   width: 100%;
   height: auto;
 }
-.header .header-text-wrap {
-  width: 60%;
+.header-text-wrap {
   text-align: center;
   padding: 20px;
 }
-.header .header-text-wrap h1 {
-  font-size: 4rem;
+.header-text-wrap h1 {
+  font-size: 3rem;
 }
-.header .header-text-wrap p {
-  font-size: 2rem;
+.header-text-wrap p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-align: justify;
 }
-.header .header-text-wrap .button {
+.header-text-wrap .button {
   box-shadow: inset 0px -3px 7px 0px #29bbff;
   background-color: #2dabf9;
   border-radius: 3px;
@@ -107,4 +133,60 @@
 .grid-item img {
   width: 100%;
   height: auto;
+}
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.tabs-container .tabs {
+  width: 900px;
+  border: 1px solid black;
+}
+.tabs-container .tabs .tabs-items {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.tabs-container .tabs .tabs-item {
+  display: none;
+  width: 95%;
+}
+.tabs-container .tabs .tabs-item .tabs-item-title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.tabs-container .tabs .tabs-item-selected {
+  display: block;
+}
+.tabs-container .tabs .tabs-links {
+  display: flex;
+  justify-content: flex-end;
+}
+.tabs-container .tabs .tabs-links .tabs-title {
+  font-size: 2rem;
+  flex: 0 0 auto;
+  padding: 20px 25px;
+}
+.tabs-container .tabs-link {
+  padding: 20px 25px;
+  font-size: 24px;
+  background-color: #4694ea;
+  border-right: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+.tabs-container .tabs-link:hover {
+  background-color: #4694ea;
+}
+.tabs-container .tabs-link-selected {
+  z-index: 2;
+  border-right: 1px solid #4694ea;
+  background-color: white;
+  color: black;
+}
+.tabs-container .tabs-link-selected:hover {
+  background-color: white;
 }
