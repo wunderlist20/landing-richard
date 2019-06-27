@@ -289,7 +289,7 @@ body {
   margin-bottom: 20px;
 }
 .kirby-container {
-  background-image: url("images/khp/kirbyBG.jpg");
+  background-image: url(images/khp/kirbyBG.jpg);
   background-attachment: fixed;
   min-height: 1000px;
 }
