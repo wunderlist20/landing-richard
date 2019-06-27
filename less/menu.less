@@ -8,6 +8,10 @@
   .menu {
     display:flex;
     justify-content: space-evenly;
+    @media (max-width:500px) {
+      flex-direction: column;
+      align-items:center;
+    }
     
   
   
@@ -17,6 +21,9 @@
       img {
         width:25%;
         height:auto;
+        @media (max-width:500px){
+          width:100%;
+        }
       }
     }
     .download {
@@ -34,11 +41,17 @@
   .links {
     display: flex;
     justify-content: flex-end;
+    @media (max-width:500px) {
+      justify-content: center;
+    }
   }
   .signup {
     flex: 0 0 auto;
     margin-left: auto;
     padding:20px;
+    @media (max-width:500px) {
+      margin-left: 0px;
+    }
     
     a {
       text-decoration: none;
@@ -49,19 +62,11 @@
     margin-left: 20px;
     padding:20px;
     flex: 0 0 auto;
+    @media (max-width:500px) {
+      margin-left:0px;
+    }
 
     a {
       text-decoration: none;
     }
   }
- /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
