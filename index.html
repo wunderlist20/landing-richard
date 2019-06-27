@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
+<html lang='en'>
+  <head>
+    
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Wunderlist 2.0</title>
@@ -13,17 +11,117 @@
 
         <!-- CSS Stylesheets -->
         <link href="css/index.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
         <!-- Javascript -->
         <script src="js/index.js" async></script>
+        <script src="js/menu.js" async></script>
+        <script src="js/tabs.js" async></script>
+        <script src="https://kit.fontawesome.com/c9d6f6c161.js"></script>
 
-    </head>
-    <body>
-        Welcome Home!
-        Things to do
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  </head>
+  <body>
+    <div class='menu-container'>
+      <div class='menu'>
+        <div class='logo'><a href="index.html"><img src='images/wl_logo_wht.png'></a></div>
+        <div class='download'><a href="404.html">Download</a></div>
+        <div class='about'><a href="about.html">The Team</a></div>
+        <div class='login'><a href="404.html">Login</a></div>
+        <div class='signup'><a href="register.html">Create a free account</a></div>
         
-        <script src="" async defer></script>
-    </body>
+      </div>
+    </div> <!--menu-container-->
+<!-- Header -->
+<div class='header-container'>
+  <div class='header'>
+    
+    <div class="header-text-wrap">
+      <h1>Wunderlist 2.0</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue eget magna sit amet convallis. Cras id lorem vitae magna sollicitudin iaculis.</p>
+      <div class="button"><a href="404.html">Check Out A Demo</a></div>
+    </div>
+    <div class="video"><img src="images/devices.png"></div>
+  </div>
+</div> 
+<!--Tabs-->
+<div class="tabs-container">
+<div class="tabs">
+    <div class="tabs-links">
+      <div class="tabs-title">Features</div>
+      <div class="tabs-link tabs-link-selected" data-tab="1">
+          <i class="fas fa-list-ol"></i>
+      </div>
+      <div class="tabs-link" data-tab="2"><i class="fas fa-tasks"></i></div>
+      <div class="tabs-link" data-tab="3"><i class="fas fa-calendar-alt"></i></div>
+    </div>
+    <div class="tabs-items">
+      <div class="tabs-item tabs-item-selected" data-tab="1">
+        <div class="tabs-item-title">Create To-Do Lists</div>
+        <div class="tabs-item-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue eget magna sit amet convallis. Cras id lorem vitae magna sollicitudin iaculis.
+            
+        </div>
+      </div>
+      <div class="tabs-item" data-tab="2">
+        <div class="tabs-item-title">Create Tasks</div>
+        <div class="tabs-item-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue eget magna sit amet convallis. Cras id lorem vitae magna sollicitudin iaculis.
+        </div>
+      </div>
+      <div class="tabs-item" data-tab="3">
+        <div class="tabs-item-title">Manage on you Calendar</div>
+        <div class="tabs-item-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue eget magna sit amet convallis. Cras id lorem vitae magna sollicitudin iaculis.
+        </div>
+      </div>
+    </div>
+  </div>   
+  </div>  
+  <!--Bottom -->
+  <div class="bottom-container">
+    <div class="bottom">
+        <div class="preview-text">
+            <h1>Discover the app</h1>
+            <p>New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating.</p>
+        </div>
+    <div class="preview-image"><img src="images/Screenshot 2019-06-27 at 11.35.39.png"></div>
+    
+  </div>
+
+
+
+
+  </div>
+<!-- Grid
+<div class='grid-container'>
+
+  <div class='grid'>
+    <div class='grid-item first-item'>
+      
+      <img src='images/profiles/profile-1.png'>
+      
+    </div>
+    <div class='grid-item'>
+      <img src='images/cat-2.jpeg'/>
+    </div>
+    <div class='grid-item'>
+      <img src='images/cat-3.jpg'/>
+    </div>
+    <div class='grid-item'>
+      <img src='images/cat-4.jpg'/>
+    </div>
+    <div class='grid-item last-item'>
+      <img src='images/cat-5.jpeg'/>
+    </div>
+    <div class='grid-item last-item'>
+        <img src='images/cat-6.jpg'/>
+      </div>
+  </div>
+</div> -->
+<!-- Footer -->
+<div class='footer'>
+  <div class='footer-item footer-one'></div>
+  <div class='footer-item footer-two'>	&#169; WunderList 2.0 2019</div>
+  <div class='footer-item footer-three'></div>
+</div>
+  </body> 
 </html>
