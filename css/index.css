@@ -77,15 +77,31 @@ body {
 .login a {
   text-decoration: none;
 }
+.about {
+  margin-left: 20px;
+  padding: 20px;
+  flex: 0 0 auto;
+}
+@media (max-width: 500px) {
+  .about {
+    margin-left: 0px;
+  }
+}
+.about a {
+  text-decoration: none;
+}
 .footer {
   display: flex;
   justify-content: space-between;
+  color: white;
 }
 .footer-item {
   border: 1px solid #fff;
-  background-color: #4694ea;
+  background-color: #29a1dd;
   height: 200px;
   flex: 1;
+  padding: 20px;
+  text-align: center;
 }
 .header-container {
   display: flex;
@@ -175,17 +191,18 @@ body {
 .grid-item {
   border: 1px solid #fff;
   width: 300px;
-  height: 300px;
+  height: auto;
 }
 .grid-item img {
   width: 100%;
   height: auto;
 }
 .grid-name {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #4694ea;
+  color: white;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 .tabs-container {
   display: flex;
@@ -246,12 +263,39 @@ body {
 .tabs-container .tabs-link-selected:hover {
   border-bottom: 1px solid white;
 }
+.bottom-container {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.bottom {
+  width: 900px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+.bottom .preview-image {
+  flex: 0 0 auto;
+  max-width: 90%;
+}
+.bottom img {
+  width: 100%;
+  height: auto;
+}
+.bottom .preview-text {
+  padding: 20px;
+  margin-bottom: 20px;
+}
 .kirby-container {
   background-image: url(/images/khp/kirbyBG.jpg);
   background-attachment: fixed;
+  min-height: 800px;
 }
 .header-container {
   background-image: none;
+  padding-bottom: 0px;
 }
 .kirby-text-wrap {
   width: 100%;
@@ -259,6 +303,7 @@ body {
 }
 .kirby-text-wrap h1 {
   font-size: 4rem;
+  text-align: left;
 }
 .kirby-text-wrap p {
   font-size: 1.6rem;
@@ -288,6 +333,7 @@ body {
 .kirby-dance {
   margin-left: auto;
   margin-right: auto;
+  width: 900px;
 }
 .kirby-footer {
   display: flex;
