@@ -291,7 +291,7 @@ body {
 .kirby-container {
   background-image: url(images/khp/kirbyBG.jpg);
   background-attachment: fixed;
-  min-height: 800px;
+  min-height: 1000px;
 }
 .header-container {
   background-image: none;
