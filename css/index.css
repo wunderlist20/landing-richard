@@ -151,10 +151,16 @@ body {
   text-decoration: none;
   text-shadow: 0px 1px 0px #263666;
 }
+.header-text-wrap a {
+  text-decoration: none;
+  color: white;
+}
+.header-text-wrap .button:hover {
+  text-decoration: underline;
+}
 .grid-container {
   display: flex;
   justify-content: center;
-  background-color: #29a1dd;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -175,13 +181,23 @@ body {
   width: 100%;
   height: auto;
 }
+.grid-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .tabs-container {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
   margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #29a1dd;
 }
 .tabs-container .tabs {
+  color: white;
   width: 900px;
 }
 .tabs-container .tabs .tabs-items {
@@ -217,22 +233,25 @@ body {
 .tabs-container .tabs-link {
   padding: 20px 25px;
   font-size: 3rem;
-  color: black;
+  color: white;
   cursor: pointer;
 }
 .tabs-container .tabs-link:hover {
-  border-bottom: 1px solid #4694ea;
+  border-bottom: 1px solid white;
 }
 .tabs-container .tabs-link-selected {
   z-index: 2;
-  border-bottom: 1px solid #4694ea;
+  border-bottom: 1px solid white;
 }
 .tabs-container .tabs-link-selected:hover {
-  background-color: white;
+  border-bottom: 1px solid white;
 }
 .kirby-container {
   background-image: url(/images/khp/kirbyBG.jpg);
   background-attachment: fixed;
+}
+.header-container {
+  background-image: none;
 }
 .kirby-text-wrap {
   width: 100%;
@@ -283,12 +302,38 @@ body {
 * {
   box-sizing: border-box;
 }
+.register-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 40px;
+}
+.register-container .register-title {
+  width: 100%;
+  padding: 20px;
+  margin-left: 20px;
+  font-size: 2rem;
+  flex-wrap: wrap;
+}
+@media (max-width: 500px) {
+  .register-container .register-title {
+    font-size: 1rem;
+    margin-left: 0px;
+    padding: 0px;
+  }
+}
+.register-container .register-call {
+  width: 100%;
+  font-size: 2rem;
+}
 form {
   max-width: 400px;
   margin: 10px auto;
   padding: 10px 20px;
-  background-color: grey;
-  border-radius: 8px;
+}
+fieldset {
+  border: none;
+  width: 100%;
 }
 h1 {
   margin: 0 0 30px 0;
@@ -310,4 +355,27 @@ select {
   color: #8a97a0;
   box-shadow: 0 1px 0 grey;
   margin-bottom: 30px;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 5px #51cbee;
+  border: 1px solid rgba(81, 203, 2);
+}
+button {
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background-color: #4694ea;
+  font-size: 1.4rem;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0);
+}
+@media (max-width: 500px) {
+  form {
+    max-width: 500px;
+  }
 }
